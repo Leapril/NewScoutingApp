@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Login</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <style>
+    input[type='checkbox'] {
+       transform: scale(2);
+       vertical-align: middle;
+       position: relative;
+       bottom: 26px;
+       }
+    </style>
+</head>
+<body>
+
+<div class="container"style="text-align: center;">
+    <h2><b><font size="60"><u>Login For Scouting </u></font></b></h2>
+    <form action="/action_page.php">
+        <div class="form-group">
+            <label for="nameOfUser"><font size="40">First and Last Name: </font></label>
+            <input type="text" class="form-control" name="nameOfUser">
+        </div>
+        <div class="form-group">
+            <label for="pwd"><font size="40">Password: </font></label>
+            <input type="password" class="form-control"name="password">
+        </div>
+
+        <div class="checkbox">
+            <label><input type="checkbox" name="remember"><font size="40">Remember me </font></label>
+        </div>
+        <button type="submit" class="btn btn-default"><font size = "40">Submit </font></button>
+    </form>
+</div>
+
+</body>
+</html>

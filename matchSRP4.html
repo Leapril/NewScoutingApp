@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Match SRP4</title>
+    <link rel="stylesheet" type="text/css" href="matchScoutingReportPage.css"/>
+    <style>
+       .Info{
+           font-size:20px;
+           text-align: center;
+           padding: 5pt;
+           background-color: white;
+           border-color:#282828;
+           border:10px;
+           width:700px;
+           height:700px
+       }
+       .Header{
+           background-color: white;
+           width:713px;
+           height:100px
+       }
+       body{
+           margin-left:10%;
+           margin-right:10%;
+           background-color:#c41717;
+       }
+       #Left{a
+           text-align: left;
+           margin-left: 10%;
+       }
+              img{
+           height:500px;
+           width:1263px;
+           opacity:0.5;
+           z-index:-1;
+           position: fixed;
+           margin:-280px;
+       }
+       input[type='radio'] {
+       transform: scale(2);
+       }
+    </style>
+<body>
+<div class="Header">
+    <div style="text-align:center">
+        <header>
+            <font size = 6>
+                <b>
+                    Match Scouting Report Page
+                    <br>
+                    _____________________________________
+                </b>
+            </font>
+        </header>
+    </div>
+
+    <div class="Info">
+        <!-- ADD FORM ACTION LATER -->
+        <form action= " " method= "POST">
+            <div style="text-align:left">
+                <br>
+                <font size = 8>
+                    <div id="afterthoughts">
+                        <center><u><b> Afterthoughts: </b></u>
+                    </div>
+                </font>
+
+                <font size = 6>
+                    <br>
+                    Comments?
+                    <br>
+                    <textarea rows = "4" input style="font-size:20px" cols = "50" name = "comments"></textarea>
+                    <br>
+                    <br>
+
+                    Rate the robot from 1-10 (1 being didn't move and 10 being awesome)
+                    <br>
+                    <input type = "number" input style="font-size:24px" name = "robotRating" value="" required>
+                    <br>
+                    <br>
+
+                    Team score:
+                    <input type = "number" input style="font-size:24px" name = "teamScore"  value="" required>
+                    <br>
+                    <br>
+
+                    <button type = "submit" style="left:50%;">
+                        <center><a>
+                            <font size = 5>
+                                Submit
+                        </center>
+                    </button></a>
+
+                </font>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

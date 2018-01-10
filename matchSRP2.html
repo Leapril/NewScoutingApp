@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>matchTeleop</title>
+    <link rel="stylesheet" type="text/css" href="matchScoutingReportPage.css"/>
+    <style>
+       .Info{
+           text-align: center;
+           padding: 5pt;
+           background-color: white;
+           border-color:#282828;
+           border:10px;
+           width:700px;
+           height:1250px
+       }
+       .Header{
+           background-color: white;
+           width:713px;
+           height:100px
+       }
+       body{
+           margin-left:10%;
+           margin-right:10%;
+           background-color:#c41717;
+       }
+       #Left{a
+           text-align: left;
+           margin-left: 10%;
+       }
+              img{
+           height:500px;
+           width:1263px;
+           opacity:0.5;
+           z-index:-1;
+           position: fixed;
+           margin:-280px;
+       }
+       input[type='radio'] {
+       transform: scale(2);
+       }
+    </style>
+</head>
+<body>
+<div class="Header">
+    <div style="text-align:center">
+        <header>
+            <font size = 6>
+                <b>
+                    Match Scouting Report Page
+                    <br>
+                    _____________________________________
+                </b>
+            </font>
+        </header>
+    </div>
+
+<div class="Info">
+    <!-- ADD FORM ACTION LATER -->
+    <form action= " " method= "POST">
+        <form style="text-align:left">
+            <br>
+            <font size = 6>
+            </font>
+        <div>
+            <font size = 8>
+                <div id="Teleop"><center>
+                    <u>
+                        <b> Teleop:  </b>
+                    </u>
+                </div>
+            </font>
+            <br>
+            <font size = 6>
+
+                Power cubes delivered to scale:
+                <br>
+                <input type = "number" input style="font-size:24px" name = "teleopScaleDelivered" value = "0" />
+                <br>
+                <br>
+
+                Power cubes delivered to portal:
+                <br>
+                <input type = "number" input style="font-size:24px" name = "teleopPortalDelivered" value = "0" />
+                <br>
+                <br>
+
+                Power cubes delivered to own team's switch?
+                <br>
+                <input type = "radio" name = "teleopOwnSwitch" value = "True" /> Yes
+                <br>
+                <input type = "radio" name = "teleopOwnSwitch" value = "False" checked = "checked"/> No
+                <br>
+                <input type = "radio" name = "teleopOwnSwitch" value = "Attempted"/> Tried and failed
+                <br>
+                <br>
+
+                Power cubes delivered to other team's switch?
+                <br>
+                <input type = "radio" name = "teleopOtherSwitch" value = "True" > Yes
+                <br>
+                <input type = "radio" name = "teleopOtherSwitch" value = "False" checked = "checked"//> No
+                <br>
+                <input type = "radio" name = "teleopOtherSwitch" value = "Attempted" /> Tried and failed
+                <br>
+                <br>
+
+                Used powerup?
+                <br>
+                <input type = "radio" name = "powerUp" value = "True"> Yes
+                <input type = "radio" name = "powerUp" value = "False" checked = "checked"> No
+                <br>
+                <br>
+
+                Number of cubes in force:
+                <input type = "number" input style="font-size:24px" name = "force" value = 0>
+                <br>
+                <br>
+
+                Number of cubes in levitate:
+                <input type = "number" input style="font-size:24px" name = "levitate" value = 0>
+                <br>
+                <br>
+
+                Number of cubes in boost:
+                <input type = "number" input style="font-size:24px" name = "boost" value = 0>
+                <br>
+                <br>
+
+                Attempted defense?
+                <br>
+                <input type = "radio" name = "attemptedDefense" value = "True"> Yes
+                <br>
+                <input type = "radio" name = "attemptedDefense" value = "False" checked = "checked"> No
+                <br>
+            </font>
+
+        </div>
+     </form>
+</body>
+</html>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Match Scouting Report Page</title>
+    <link rel="stylesheet" type="text/css" href="matchScoutingReportPage.css"/>
+    <style>
+       .Info{
+           font-size:20px;
+           text-align: center;
+           padding: 5pt;
+           background-color: white;
+           border-color:#282828;
+           border:10px;
+           width:700px;
+           height:1100px
+       }
+       .Header{
+           background-color: white;
+           width:713px;
+           height:100px
+       }
+       body{
+           margin-left:10%;
+           margin-right:10%;
+           background-color:#c41717;
+       }
+       #Left{a
+           text-align: left;
+           margin-left: 10%;
+       }
+              img{
+           height:500px;
+           width:1263px;
+           opacity:0.5;
+           z-index:-1;
+           position: fixed;
+           margin:-280px;
+       }
+       input[type='radio'] {
+       transform: scale(2);
+       }
+    </style>
+<body>
+<div class="Header">
+    <div style="text-align:center">
+        <header>
+            <font size = 6>
+            <b>
+                Match Scouting Report Page
+                <br>
+                _____________________________________
+            </b>
+            </font>
+        </header>
+    </div>
+
+    <div class="Info">
+        <!-- ADD FORM ACTION LATER -->
+        <form action= " " method= "POST">
+            <div style="text-align:left">
+                <br>
+                <font size = 6>
+                    Team Number:
+                    <input type = "number" input style="font-size:24px" name = "teamNumber" required/>
+                    <br>
+                    <br>
+                </font>
+
+                <font size = 6>
+                    Competition:
+                    <br>
+                    <input type = "radio" name = "competition" value = "Competition 1" checked = "checked"> San Francisco Regional
+                    <br>
+                    <input type = "radio" name = "competition" value = "Competition 2"> Sacramento Regional
+                    <br>
+                    <input type = "radio" name = "competition" value = "Competition 3"> Competition 3
+                    <br>
+                </font>
+
+                <br>
+                <font size = 8>
+                    <div id="Autonomous"><center>
+                        <u>
+                            <b> Autonomous:  </b>
+                        </u>
+                    </div>
+                </font>
+                <br>
+                <font size = 6>
+                    Crossed line?
+                    <br>
+                    <input type = "radio" name = "crossLine" value = "True" /> Yes
+                    <br>
+                    <input type = "radio" name = "crossLine" value = "False" checked = "checked"/> No
+                    <br>
+                    <br>
+
+                    Power cubes delivered to scale:
+                    <br>
+                    <input type = "number" input style="font-size:24px" name = "scaleDelivered" value = "0" />
+                    <br>
+                    <br>
+
+                    Power cubes delivered to portal:
+                    <br>
+                    <input type = "number" input style="font-size:24px" name = "portalDelivered" value = "0" />
+                    <br>
+                    <br>
+
+                    Power cubes delivered to own team's switch?
+                    <br>
+                    <input type = "radio" name = "ownSwitch" value = "True" /> Yes
+                    <br>
+                    <input type = "radio" name = "ownSwitch" value = "False" checked = "checked"/> No
+                    <br>
+                    <br>
+
+                    Power cubes delivered to other team's switch?
+                    <br>
+                    <input type = "radio" name = "otherSwitch" value = "True" > Yes
+                    <br>
+                    <input type = "radio" name = "otherSwitch" value = "False" checked = "checked"//> No
+                    <br>
+                    <br>
+                    <br>
+
+
+            </div>
+
+</div>
+</body>
+</html>

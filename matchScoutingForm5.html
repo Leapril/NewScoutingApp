@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Match Scouting Pg4</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<style>
+.big{ width: 2em; height: 2em; }
+.balance {position: relative;}
+a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 16px;
+}
+a:hover {
+    background-color: #ddd;
+    color: black;
+}
+.container{
+    position: absolute;
+}
+.previous {
+    background-color: #f1f1f1;
+    color: black;
+}
+.next {
+    background-color: #4CAF50;
+    color: white;
+}
+
+</style>
+
+<div class="formContainer" style="text-align: center">
+    <font face="verdana">
+        <h4> Match Scouting Report Page
+            ___________________________ </h4>
+        <h2><font size="10"> <b> <u> Teleop </u></b> </font></h2>
+
+        <!--input action later -->
+        <form action=" " method="POST">
+            <div class="form-group">
+                <div class="container">
+
+                    <br>
+                    <label for="teleopPowerup"> <font size="6"> *Used Powerups?: </font> </label>
+                    <br>
+                    <input type="radio" name="teleopPowerup" class="big" value="True"> <font size="6">
+                    Yes </font> </input>
+                    <input type="radio" name="teleopPowerup" class="big" value="False" checked="checked"> <font
+                        size="6"> No </font> </input>
+                    <br>
+                    <br>
+                    <label for="teleopExchange"> <font size="6"> *Used exchange? </font> </label>
+                    <br>
+                    <input type="radio" name="teleopExchange" class="big" value="True"> <font size="6">
+                    Yes </font> </input>
+                    <input type="radio" name="teleopExchange" class="big" value="False" checked="checked"> <font
+                        size="6"> No </font> </input>
+                    <br>
+                    <br>
+                    <label for="defense"> <font size="6"> *Attempted defense?: </font> </label>
+                    <br>
+                    <input type="radio" name="defense" class="big" value="True"> <font size="6"> Yes </font> </input>
+                    <input type="radio" name="defense" class="big" value="False" checked="checked"> <font size="6">
+                    No </font> </input>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <a href="matchScoutingForm4.html" class="previous"> <font size="5"> &laquo; PREVIOUS </font></a>
+                    <a href="matchScoutingForm6.html" class="next"> <font size="5"> NEXT &raquo; </font></a>
+                </div>
+            </div>
+        </form>
+    </font>
+</div>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Testing</title>
+
+    <link rel="stylesheet" type="text/css" href="pitScoutingReportPage.css"/>
+
+    <style>
+        body
+        {
+            position: center;
+            background-color: black;
+            margin-left: 15%;
+            margin-right: 15%;
+        }
+
+        .info
+        {
+            text-align: center;
+            background-color: white;
+            height: 750px;
+        }
+
+        .Header
+        {
+            font-size: 150%;
+        }
+
+        img{
+           height:500px;
+           width:1500px;
+           opacity:0.5;
+           z-index:-1;
+           position: fixed;
+           margin:-200px;
+       }
+
+    </style>
+</head>
+
+<img src="https://free4kwallpapers.com/uploads/wallpaper-cache/synthwave-wallpaper-1300x0-MM-100.jpg">
+
+<body>
+<div class="info">
+    <div class="Header">
+        <header>
+            <b>
+                <br>
+                Pit Scouting Report Page
+                <br>
+                _____________________________________
+            </b>
+        </header>
+    </div>
+
+    <form action ="submitPitReport.php" method= "POST">
+
+        <br>
+        <div id = "information">
+            <u><b>Team Information: </b></u>
+        </div>
+
+        <br>
+        Team number:
+        <input type = "number" input style="font-size:24px" name = "teamNumber"/>
+        <br>
+        Team name (optional):
+        <input type = "text" name = input style="font-size:24px" "teamName"/>
+        <br>
+        Max speed (feet/second):
+        <input type = "number" input style="font-size:24px" name = "maxSpeed"/>
+        <br>
+
+        <br>
+        <div id="drive">
+            <u><b> Drive: </b></u>
+        </div>
+
+        <br>
+        Transmission
+        <br>
+        <input type = "radio" name = "transmission" value = "True"> Yes
+        <br>
+        <input type = "radio" name = "transmission" value = "False" checked = "checked"> No <br>
+        <br>
+
+        <br>
+        Number of wheels:
+        <br>
+        <input type = "radio" name = "wheelNumber" value = "4"> 4
+        <br>
+        <input type = "radio" name = "wheelNumber" value = "6"> 6
+        <br>
+        <input type = "radio" name = "wheelNumber" value = "8"> 8
+        <br>
+
+        <br>
+        Drive type:
+        <br>
+        <input type = "radio" name = "driveType" value = "westCoast"> West Coast
+        <br>
+        <input type = "radio" name = "driveType" value = "Swerve"> Swerve
+        <br>
+        <input type = "radio" name = "driveType" value = "Mecanum"> Mecanum
+        <br>
+        <input type = "radio" name = "driveType" value = "Omni"> Omni
+        <br>
+        <input type = "radio" name = "driveType" value = "Other"> Other
+        <br>
+
+        <br>
+        If other, describe:
+        <br>
+        <input type = "text" input style="font-size:24px" name = "driveDescription" value = " ">
+        <br>
+        <br>
+
+        <button type = "nextPage">
+            <center>
+                <a><font size = 5>
+                    Next
+                </font></a>
+            </center>
+        </button>
+
+    </form>
+</div>
+</body>
+</html>

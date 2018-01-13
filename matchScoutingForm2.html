@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -45,7 +43,7 @@ a:hover {
     <font face="verdana">
         <h4> Match Scouting Report Page
             ___________________________ </h4>
-        <h2><font size="10"> <b> <u> Before Match </u></b> </font></h2>
+        <h2><font size="10"> <b> <u> Autonomous </u></b> </font></h2>
 
         <!--input action later -->
         <form action=" " method="POST">
@@ -57,10 +55,18 @@ a:hover {
                     <input type="radio" name="crossedLine" class="big" value="False" checked = "checked"> <font size="6"> No </font> </input>
                     <br>
                     <br>
-                    <label for="scaleDelivered"> <font size="6"> *Cubes passed to scale: </font> </label>
-                    <input class="form-control input-lg" name="scaleDelivered" type="number" value = "0">
-                    <label for="portalDelivered"> <font size="6"> *Cubes delivered to portal: </font> </label>
-                    <input class="form-control input-lg" name="portalDelivered" type="number" value = "0">
+                    <label for="ownSwitch"> <font size="6"> *Cubes put on own team's switch? </font> </label>
+                    <br>
+                    <input type="radio" name="ownSwitch" class="big" value="True"> <font size="6"> Yes </font> </input>
+                    <input type="radio" name="ownSwitch" class="big" value="False" checked = "checked"> <font size="6"> No </font> </input>
+                    <br>
+                    <br>
+                    <label for="otherSwitch"> <font size="6"> *Or other team's switch? </font> </label>
+                    <br>
+                    <input type="radio" name="otherSwitch" class="big" value="True"> <font size="6"> Yes </font> </input>
+                    <input type="radio" name="otherSwitch" class="big" value="False" checked = "checked"> <font size="6"> No </font> </input>
+                    <br>
+                    <br>
                     <br>
                     <a href="matchScoutingForm1.html" class="previous"> <font size="5"> &laquo; PREVIOUS </font></a>
                     <a href="matchScoutingForm3.html" class="next"> <font size="5"> NEXT &raquo; </font></a>
@@ -69,4 +75,3 @@ a:hover {
         </form>
     </font>
 </div>
-

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pit2</title>
+
+    <link rel="stylesheet" type="text/css" href="pitScoutingReportPage.css"/>
+
+
+    <style>
+        body
+        {
+            position: center;
+            background-color: black;
+            margin-left: 15%;
+            margin-right: 15%;
+        }
+
+        .info
+        {
+            text-align: center;
+            background-color: white;
+            height: 800px;
+        }
+
+        .Header
+        {
+            font-size: 150%;
+        }
+
+        img{
+           height:500px;
+           width:1500px;
+           opacity:0.5;
+           z-index:-1;
+           position: fixed;
+           margin:-200px;
+       }
+
+
+    </style>
+</head>
+
+<img src="https://free4kwallpapers.com/uploads/wallpaper-cache/synthwave-wallpaper-1300x0-MM-100.jpg">
+
+<body>
+    <div class="info">
+        <div class="Header">
+                <header>
+                        <b>
+                            <br>
+                            Pit Scouting Report Page
+                            <br>
+                            _____________________________________
+                        </b>
+                </header>
+        </div>
+
+        <form action ="submitPitReport.php" method= "POST">
+
+            <br>
+            <div id="strategy"><center>
+                <u><b> Preferred Strategy: </b></u>
+            </div>
+
+            <br>
+            Switches?
+            <br>
+            <input type = "radio" name = "switchesStrategy" value = "ownTeam"> Own Team
+            <br>
+            <input type = "radio" name = "switchesStrategy" value = "otherTeam" checked = "checked"> Other Team
+            <br>
+            <input type = "radio" name = "switchesStrategy" value = "none" checked = "checked"> None
+            <br>
+            <br>
+
+            Scale:
+            <br>
+            <input type = "radio" name = "scaleStrategy" value = "True"> Yes
+            <input type = "radio" name = "scaleStrategy" value = "False" checked = "checked"> No <br>
+            <br>
+
+            Portal:
+            <br>
+            <input type = "radio" name = "portalStrategy" value = "True"> Yes
+            <input type = "radio" name = "portalStrategy" value = "False" checked = "checked"> No <br>
+            <br>
+
+            Powerups:
+            <br>
+            <input type = "checkbox" name = "powerups[]" value = "boost"> Boost
+            <br>
+            <input type = "checkbox" name = "powerups[]" value = "force"> Force
+            <br>
+            <input type = "checkbox" name = "powerups[]" value = "levitate"> Levitate
+            <br>
+            <br>
+
+            Will you play defense?
+            <br>
+            <input type = "radio" name = "defenseStrategy" value = "True"> Yes
+            <br>
+            <input type = "radio" name = "defenseStrategy" value = "False" checked = "checked"> No <br>
+            <br>
+
+            Plan on climbing rope?
+            <br>
+            <input type = "radio" name = "climbRope" value = "True"> Yes
+            <br>
+            <input type = "radio" name = "climbRope" value = "False" checked = "checked"> No <br>
+            <br>
+
+            If so, how long does it take to attach?
+            <br>
+            <input type = "number" input style="font-size:24px" name = "attachTime" value = "0"> seconds
+            <br>
+            <br>
+
+            How long does it take to climb?
+            <br>
+            <input type = "number" input style="font-size:24px" name = "climbTime" value = "0"> seconds
+            <br>
+            <br>
+
+           <button type = "nextPage">
+                <center>
+                    <a><font size = 5>
+                        Next
+                    </font></a>
+                </center>
+            </button>
+
+        </form>
+    </div>
+</body>
+</html>

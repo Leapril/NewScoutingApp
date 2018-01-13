@@ -1,7 +1,9 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Match Scouting Pg 1</title>
+    <title>Match Scouting Pg2</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -49,18 +51,19 @@ a:hover {
         <form action=" " method="POST">
             <div class="form-group">
                 <div class="container">
-                    <label for="teamNumber"> <font size="6"> *Crossed Line? </font> </label>
+                    <label for="crossedLine"> <font size="6"> *Crossed Line? </font> </label>
                     <br>
                     <input type="radio" name="crossedLine" class="big" value="True"> <font size="6"> Yes </font> </input>
-                    <input type="radio" name="crossedLine" class="big" value="False"> <font size="6"> No </font> </input>
-                    <br>
-                    <label for="teamName"> <font size="6"> Team Name: </font> </label>
-                    <input class="form-control input-lg" name="teamName" type="text">
-                    <label for="competition"> <font size="6"> Competition </font> </label>
+                    <input type="radio" name="crossedLine" class="big" value="False" checked = "checked"> <font size="6"> No </font> </input>
                     <br>
                     <br>
+                    <label for="scaleDelivered"> <font size="6"> *Cubes passed to scale: </font> </label>
+                    <input class="form-control input-lg" name="scaleDelivered" type="number" value = "0">
+                    <label for="portalDelivered"> <font size="6"> *Cubes delivered to portal: </font> </label>
+                    <input class="form-control input-lg" name="portalDelivered" type="number" value = "0">
                     <br>
-                    <a href="matchScoutingForm2" class="next"> <font size="5"> NEXT &raquo; </font></a>
+                    <a href="matchScoutingForm1.html" class="previous"> <font size="5"> &laquo; PREVIOUS </font></a>
+                    <a href="matchScoutingForm3.html" class="next"> <font size="5"> NEXT &raquo; </font></a>
                 </div>
             </div>
         </form>

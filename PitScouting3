@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pit3</title>
+
+    <link rel="stylesheet" type="text/css" href="pitScoutingReportPage.css"/>
+
+
+    <style>
+        body
+        {
+            position: center;
+            background-color: black;
+            margin-left: 15%;
+            margin-right: 15%;
+        }
+
+        .info
+        {
+            text-align: center;
+            background-color: white;
+            height: 400px;
+        }
+
+        .Header
+        {
+            font-size: 150%;
+        }
+
+        img{
+           height:500px;
+           width:1500px;
+           opacity:0.5;
+           z-index:-1;
+           position: fixed;
+           margin:-200px;
+       }
+
+
+    </style>
+</head>
+
+<img src="https://free4kwallpapers.com/uploads/wallpaper-cache/synthwave-wallpaper-1300x0-MM-100.jpg">
+
+<body>
+<div class="info">
+    <div class="Header">
+        <header>
+            <b>
+                <br>
+                Pit Scouting Report Page
+                <br>
+                _____________________________________
+            </b>
+        </header>
+    </div>
+
+    <form action ="submitPitReport.php" method= "POST">
+
+        <br>
+        <div id="afterthoughts"><center>
+            <u><b> Afterthoughts: </b></u>
+        </div>
+
+            <br>
+            Any other comments?
+            <br>
+            <textarea rows = "4" input style="font-size:15px" cols = "50" name = "otherComments"></textarea>
+            <br>
+            <br>
+
+            Which of these competitions are you going to?
+            <br>
+            <input type = "checkbox" name = "competition[]" value = "Competition 1"> San Francisco Regional
+            <br>
+            <input type = "checkbox" name = "competition[]" value = "Competition 2"> Sacramento Regional
+            <br>
+            <input type = "checkbox" name = "competition[]" value = "Competition 3"> Competition 3
+            <br>
+            <br>
+
+            <button type = "submit">
+            <center>
+                <a><font size = 5>
+                    Submit
+                </font></a>
+            </center>
+        </button>
+
+    </form>
+</div>
+</body>
+</html>

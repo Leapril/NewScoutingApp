@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Pit Scouting Pg5</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<style>
+.big{ width: 2em; height: 2em; }
+.balance {position: relative;}
+a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 16px;
+}
+a:hover {
+    background-color: #ddd;
+    color: black;
+}
+.container{
+    position: absolute;
+}
+.previous {
+    background-color: #f1f1f1;
+    color: black;
+}
+.next {
+    background-color: #4CAF50;
+    color: white;
+}
+</style>
+
+<div class="formContainer" style="text-align: center">
+    <font face="verdana">
+        <h4> Pit Scouting Report Page
+            ___________________________ </h4>
+        <h2><font size="10"> <b> <u> Autonomous </u></b> </font></h2>
+
+        <!--input action later -->
+        <form action=" " method="POST">
+            <div class="form-group">
+                <div class="container" style="text-align: center">
+
+                    <br>
+                    <label for="pitAutonomous"> <font size="5"> *Capable of autonomous? </font> </label>
+                    <br>
+                    <input type="radio" name="pitAutonomous" class="big" value="True"> <font size="5"> Yes </font> </input>
+                    <input type="radio" name="pitAutonomous" class="big" value="False" checked = "checked"> <font size="5"> No </font> </input>
+                    <br>
+                    <label for="pitCrossLine"> <font size="5"> *Cross Line? </font> </label>
+                    <br>
+                    <input type="radio" name="pitCrossLine" class="big" value="True"> <font size="5"> Yes </font> </input>
+                    <input type="radio" name="pitCrossLine" class="big" value="False" checked = "checked"> <font size="5"> No </font> </input>
+                    <br>
+                    <label for="pitAutoScale"> <font size="5"> *Delivering to scale? </font> </label>
+                    <br>
+                    <input type="radio" name="pitAutoScale" class="big" value="True"> <font size="5"> Yes </font> </input>
+                    <input type="radio" name="pitAutoScale" class="big" value="False" checked = "checked"> <font size="5"> No </font> </input>
+                    <br>
+                    <label for="pitAutoScale"> <font size="5"> *Delivering to portal? </font> </label>
+                    <br>
+                    <input type="radio" name="pitAutoPortal" class="big" value="True"> <font size="5"> Yes </font> </input>
+                    <input type="radio" name="pitAutoPortal" class="big" value="False" checked = "checked"> <font size="5"> No </font> </input>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <a href="pitScoutingForm4.html" class="previous"> <font size="5"> &laquo; BACK </font></a>
+                    <a href="pitScoutingForm6.html" class="next"> <font size="5"> TELEOP &raquo; </font></a>
+
+                </div>
+            </div>
+        </form>
+    </font>
+</div>

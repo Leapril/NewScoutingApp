@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Pit Scouting Pg4</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<style>
+.big{ width: 2em; height: 2em; }
+.balance {position: relative;}
+a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 16px;
+}
+a:hover {
+    background-color: #ddd;
+    color: black;
+}
+.container{
+    position: absolute;
+}
+.previous {
+    background-color: #f1f1f1;
+    color: black;
+}
+.next {
+    background-color: #4CAF50;
+    color: white;
+}
+</style>
+
+<div class="formContainer" style="text-align: center">
+    <font face="verdana">
+        <h4> Pit Scouting Report Page
+            ___________________________ </h4>
+        <h2><font size="10"> <b> <u> Powerups </u></b> </font></h2>
+
+        <!--input action later -->
+        <form action=" " method="POST">
+            <div class="form-group">
+                <div style = "text-align:center" class="container">
+
+                    <br>
+                    <label for="boost"><font size="6"> *Boost: </font> </label>
+                    <br>
+                    <input type="radio" name="boost" class="big" value="True"> <font size="5"> Yes </font> </input>
+                    <input type="radio" name="boost" class="big" value="False"checked = "checked"> <font size="5"> No </font> </input>
+                    <br>
+                    <br>
+                    <label for="force"> <font size="6"> *Force: </font> </label>
+                    <br>
+                    <input type="radio" name="force" class="big" value="True"> <font size="5"> Yes </font> </input>
+                    <input type="radio" name="force" class="big" value="False"checked = "checked"> <font size="5"> No </font> </input>
+                    <br>
+                    <br>
+                    <br>
+                    <label for="levitate"> <font size="6"> *Levitate: </font> </label>
+                    <br>
+                    <input type="radio" name="levitate" class="big" value="True"> <font size="5"> Yes </font> </input>
+                    <input type="radio" name="levitate" class="big" value="False" checked = "checked"> <font size="5"> No </font> </input>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <a href="pitScoutingForm3.html" class="previous"> <font size="5"> &laquo; BACK </font></a>
+                    <a href="pitScoutingForm5.html" class="next"> <font size="5"> AUTO &raquo; </font></a>
+
+                </div>
+            </div>
+        </form>
+    </font>
+</div>
